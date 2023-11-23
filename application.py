@@ -5,8 +5,8 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
 
-app = Flask(__name__)
-
+application = Flask(__name__)
+app=application
 rideg_model=pickle.load(open('model/ridge.pkl','rb'))
 standard_scaler=pickle.load(open('model/scaler.pkl','rb'))
 
